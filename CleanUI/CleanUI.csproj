@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="Current">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <FileUpgradeFlags>40</FileUpgradeFlags>
+    <UpgradeBackupLocation>C:\Users\Nvlav\source\repos\CleanUI\Backup\CleanUI\</UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="1200px-OOjs_UI_icon_eyeClosed.svg.png" />
+    <None Remove="63568.png" />
+    <None Remove="black-and-white-library-logo-design-template-54ab68edc169fd37dfc5dfa38bbffd0c_screen-removebg.png" />
+    <None Remove="Image\1200px-OOjs_UI_icon_eyeClosed.svg.png" />
+    <None Remove="Image\63568.png" />
+    <None Remove="Image\black-and-white-library-logo-design-template-54ab68edc169fd37dfc5dfa38bbffd0c_screen-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MahApps.Metro.IconPacks.Material" Version="4.11.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\1200px-OOjs_UI_icon_eyeClosed.svg.png" />
+    <Resource Include="Image\63568.png" />
+    <Resource Include="Image\black-and-white-library-logo-design-template-54ab68edc169fd37dfc5dfa38bbffd0c_screen-removebg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Folders\Fonts\" />
+    <Folder Include="Folders\MVVM\ViewModel\" />
+    <Folder Include="Folders\MVVM\View\" />
+    <Folder Include="Folders\MVVM\Model\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,120 @@
+﻿<Window x:Class="CleanUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CleanUI"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="600" Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None" ResizeMode="NoResize"
+        MouseDown="Window_MouseDown">
+
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Border CornerRadius="15" Grid.RowSpan="2">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#7be9f6" Offset="0.0"/>
+                        <GradientStop Color="#f083da" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Button x:Name="exit" Content="X" Margin="558,10,10,509" FontWeight="Bold" Click="exit_Click"/>
+
+
+
+
+            </Border>
+
+            <StackPanel VerticalAlignment="Center" Height="186">
+                <Image x:Name="logo" Source="/Image/black-and-white-library-logo-design-template-54ab68edc169fd37dfc5dfa38bbffd0c_screen-removebg.png" Height="513" Width="372" Margin="15,-150,0,0"/>
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="txtUsername" FontFamily="Helvetica"
+                           FontWeight="Light"
+                           Text=""
+                           FontSize="28"
+                           Foreground="White"
+                           Background="Transparent"
+                           Width="231"
+                           Opacity="0.5"
+                           Height="36"
+                               Margin="185,0,0,0"/>
+                    <iconPacks:PackIconMaterial Kind="Account" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
+
+                </StackPanel>
+                <Border Width="272"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+
+
+
+                <StackPanel Orientation="Horizontal" Margin="-5,30,0,0">
+                    <PasswordBox x:Name="txtPassword" FontFamily="Helvetica"
+                           FontWeight="Light"
+                           Password=""
+                           FontSize="28"
+                           Foreground="White"
+                           Background="Transparent"
+                           Width="231"
+                           Opacity="0.5"
+                           Height="36"
+                               Margin="190,0,0,0" RenderTransformOrigin="0.524,0.501"/>
+                    <iconPacks:PackIconMaterial Kind="FormTextboxPassword" 
+                                                VerticalAlignment="Center" 
+                                                HorizontalAlignment="Center" 
+                                                Foreground="White"/>
+
+
+                </StackPanel>
+
+                <Border Width="272"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+                <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                    <Button x:Name="LoginButton" Width="150" Height="45" Content="Login" Margin="232,-35,10,0" FontSize="20" FontWeight="Bold" Click="LoginButton_Click"/>
+                </StackPanel>
+
+
+
+            </StackPanel>
+            <Label Content="Username" HorizontalAlignment="Left" Margin="184,246,0,0" VerticalAlignment="Top" Height="29" Width="105"
+                   FontFamily="Helvetica"
+                   FontSize="20"
+                   Foreground="White"/>
+            <Label Content="Password
+                   " HorizontalAlignment="Left" Margin="184,40,0,0" VerticalAlignment="Top" Height="29" Width="105"
+                FontFamily="Helvetica"
+                FontSize="20"
+                Foreground="White" Grid.Row="1"/>
+            <Label x:Name="label2" Content="Don't Have an Account?" HorizontalAlignment="Center" Margin="15,171,0,0" VerticalAlignment="Top" Height="29" Width="166"
+                FontFamily="Helvetica"
+                FontSize="14"
+                Foreground="White" Grid.Row="1" FontWeight="Bold"/>
+            <Label x:Name="label1" Content="Create Account" HorizontalAlignment="Center" Margin="15,200,0,0" VerticalAlignment="Top" Height="29" Width="110"
+                FontFamily="Helvetica"
+                FontSize="14"
+                Foreground="#FF8E00C7" Grid.Row="1" FontWeight="Bold" Cursor="Hand" MouseDown="label1_MouseDown"/>
+
+
+
+        </Grid>
+    </Grid>
+</Window>
